@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bighome.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Document</title>
+    <style>
+      body{
+        background-image: url(/image/nen.png);
+        background-size: 100%;
+        background-position: left top;
+      }
+    </style>
+</head>
+<body>
+    <div class="sidenav">
+        <a class="navbar-brand text-light" href="#"><img src="/image/logo.png" alt="" width="100%">
+        <a href="/thongke.html">Thống kê</a>
+        <a href="/nhaphang.html">Nhập hàng</a>
+      </div>
+    <div class="bao17">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#4E2F1A ;">
+            <div class="bao1a">
+                QUẢN LÝ
+            </div>
+        </nav>
+    <div class="container py-3 px-0" style="height:150px ;">
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm bg-success text-light p-2">
+                        <div>TỔNG DOANH THU:</div>
+                        <div style="font-size:20px ;">120.000.000</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm bg-danger text-light p-2">
+                        <div>SỐ ĐƠN HÀNG:</div>
+                        <div style="font-size:20px ;">170</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm bg-primary text-light p-2">
+                        <div>SỐ LƯỢNG SẢN PHẨM:</div>
+                        <div style="font-size:20px ;">198</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container py-3 px-0">
+        <main>
+            <div class="row row-cols-1 row-cols-md-2 mb-3 text-center">
+                <div class="col ">
+                    <div class="card mb-4 rounded-3 shadow-sm bg-light text-dark p-2">
+                        <div>
+                            <canvas id="myChart" style="width:100%;max-width:100%"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm bg-light text-dark p-2">
+                        <canvas id="myChart1" style="width:100%;max-width:100%"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="container py-3 px-0">
+        <main>
+            
+        </main>
+    </div>
+    </div>
+<script>
+    var xValues = ["Trà sữa đặc biệt", "Trà sữa socola", "Cafe đen", "Cafe sữa", "Trà đào","Trà chanh"];
+    var yValues = [160, 149, 144, 129, 126, 121,111];
+    var barColors = ["red", "green","blue","orange","brown","pink"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "Top sản phẩm bán chạy"
+        }
+      }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <body>
+    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+    
+    <script>
+    var xValues = [1,2,3,4,5,6,7,8,9,10,11,12];
+    
+    new Chart("myChart1", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{ 
+          data: [86,106,100,150,111,133,121,163,147,140,100,130],
+          borderColor: "red",
+          fill: false
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: "Doanh thu theo từng tháng (triệu)"
+        }
+      }
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bighome.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+      body{
+        background-image: url(/image/nen.png);
+        background-size: 100%;
+        background-position: left top;
+      }
+    </style>
+</head>
+<body>
+
+  <div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="/image/logo.png" alt="" width="20%"=height>
+    <h1 class="display-5 fw-bold">
+      <div class="bao">
+      coffee is love
+    </div></h1>
+    <br>
+    <div class="col-lg-6 mx-auto">
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button class="w-25 btn btn-lg btn-light border border-3 border-dark" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal1"><strong>Nhân viên</strong></button>
+        <button class="w-25 btn btn-lg btn-light border border-3 border-dark" type="button"data-bs-toggle="modal" data-bs-target="#exampleModal2"><strong>Quản lý</strong></button>
+      </div>
+    </div>
+  </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div align="center">
+            <form class="w-75 p-5 text-center" style="text-align:right ;">
+                
+              <h1 class="h3 mb-3 fw-normal">Quản lý</h1>
+          
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Tên đăng nhập</label>
+              </div>
+              <br>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Mật khẩu</label>
+              </div>
+              <br>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Nhớ tài khoản
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="button" onclick="window.location.href='/thongke.html'">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div align="center">
+            <form class="w-75 p-5 text-center" style="text-align:right ;">
+                
+              <h1 class="h3 mb-3 fw-normal">Nhân viên</h1>
+          
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Tên đăng nhập</label>
+              </div>
+              <br>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Mật khẩu</label>
+              </div>
+              <br>
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Nhớ tài khoản
+                </label>
+              </div>
+              <button class="w-100 btn btn-lg btn-primary" type="button" onclick="window.location.href='/banhang.html'">Đăng nhập</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+</body>
+</html>
